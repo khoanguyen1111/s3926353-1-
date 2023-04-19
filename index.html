@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            DangKhoaNguyen_Home
+           
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    </head>
+    
+    <body style="background-color: rgb(237, 226, 237);">
+        
+        <div class="row">
+           
+
+
+            <div class="image-container"><img id="house" src="img/house.png" onmouseover="this.src='img/house2.png';" onmouseout="this.src='img/house.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="bed" src="img/bed.png"onmouseover="this.src='img/bed2.png';" onmouseout="this.src='img/bed.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="shower" src="img/shower.png" onmouseover="this.src='img/shower2.png';" onmouseout="this.src='img/shower.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="clothes" src="img/wardrobe.png" onmouseover="this.src='img/wardrobe2.png';" onmouseout="this.src='img/wardrobe.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="kitchen" src="img/kitchen.png"  onmouseover="this.src='img/kitchen2.png';" onmouseout="this.src='img/kitchen.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="shelf" src="img/shelf.png" onmouseover="this.src='img/shelf2.png';" onmouseout="this.src='img/shelf.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="lamp" src="img/lamp.png" width="200" onmouseover="this.src='img/lamp2.png';" onmouseout="this.src='img/lamp.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="plant" src="img/plant.png" onmouseover="this.src='img/plant2.png';" onmouseout="this.src='img/plant.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="tv" src="img/tv.png" onmouseover="this.src='img/tv2.png';" onmouseout="this.src='img/tv.png';" width="200" height="200"/></div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/bath.mp3");
+            var sound2 = new buzz.sound("sound/bed.mp3");
+            var sound3 = new buzz.sound("sound/house.mp3");
+            var sound4 = new buzz.sound("sound/kitchen.mp3");
+            var sound5 = new buzz.sound("sound/lamp.mp3");
+            var sound6 = new buzz.sound("sound/plant.mp3");
+            var sound7 = new buzz.sound("sound/shelf.mp3");
+            var sound8 = new buzz.sound("sound/tv.mp3");
+            var sound9 = new buzz.sound("sound/wardrobe.mp3");
+
+            window.onload = function() {
+                document.getElementById('shower').addEventListener('click', function () {sound1.play();});
+                document.getElementById('bed').addEventListener('click', function () {sound2.play();});
+                document.getElementById('house').addEventListener('click', function () {sound3.play();});
+                document.getElementById('kitchen').addEventListener('click', function () {sound4.play();});
+                document.getElementById('lamp').addEventListener('click', function () {sound5.play();});
+                document.getElementById('plant').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('shelf').addEventListener('click', function () {sound7.play();});
+                document.getElementById('tv').addEventListener('click', function () {sound8.play();});
+                document.getElementById('clothes').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
